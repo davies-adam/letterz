@@ -1,6 +1,6 @@
 var ipa = {
-    "ks": "https://dl.dropboxusercontent.com/s/fwegk0q7uamqbe7/ks.ogg?token_hash=AAFfY--szpKho5xE-OYQiybQjf8NOmKxrDzgmdpTmXsFZw,
-    "ps": "https://dl.dropboxusercontent.com/s/3w1ywt5rhd8y59e/ps.ogg?token_hash=AAGQGPHwAUvhV5laBfGErNUyWmP1gZRxNqI3kjc2HiCPuw,
+    "ks": "https://dl.dropboxusercontent.com/s/fwegk0q7uamqbe7/ks.ogg?token_hash=AAFfY--szpKho5xE-OYQiybQjf8NOmKxrDzgmdpTmXsFZw",
+    "ps": "https://dl.dropboxusercontent.com/s/3w1ywt5rhd8y59e/ps.ogg?token_hash=AAGQGPHwAUvhV5laBfGErNUyWmP1gZRxNqI3kjc2HiCPuw",
     "i": "http://upload.wikimedia.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg",
     "y": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Close_front_rounded_vowel.ogg",
     "ɨ": "http://upload.wikimedia.org/wikipedia/commons/5/53/Close_central_unrounded_vowel.ogg",
@@ -101,19 +101,19 @@ var ipa = {
 };
 
 
-setAudio = function(url) {
-  $("#audio").attr("src", url);
+setAudio = function(char) {
+  $("#audio").attr("src", ipa[char]);
   $("#audio").get(0).play();
 }
 
 getAlphabet = function (alphabet) {
     $.getJSON(("http://harlaw-96324.use1-2.nitrousbox.com:5000/data/" + alphabet), function (data) {
-        $.each(data, function (key, value) {
-            $(".table").append("<tr><td id=\'" + key[0] + "\'</td>" + key + "</td><td>" +  value[1] +"</td></tr>");
-            var ipavalue = ipa[value[0]];
-            $("#" + key[0]).on("click", function() {
-                setAudio(ipavalue);
+      for (var row = 0; row < data.length; row++) {
+            letter = data[row]
+            $(".table").append("<tr><td id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>" +  letter[2] +"</td></tr>");
+            $("#" + row).on("click", function() {
+                setAudio(data[this.id][1]);
             })            
-        })
+        }
     })
 }
