@@ -24,3 +24,18 @@ body, html {
   color: white;
 	height: 50%;
 }
+.hiragana {
+  background: #c0392b;
+  color: white;
+	height: 50%;
+}
+.vietnamese {
+  background: #2c3e50;
+  color: white;
+	height: 50%;
+}
+.somali {
+  background: #f39c12;
+  color: white;
+	height: 50%;
+}
