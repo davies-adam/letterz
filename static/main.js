@@ -99,10 +99,112 @@ var ipa = {
     "ʟ": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Velar_lateral_approximant.ogg",
     "ɺ": "http://upload.wikimedia.org/wikipedia/commons/d/df/Alveolar_lateral_flap.ogg"
 };
+equivalents = {
+    "ks": "x as in a<b>x</b>",
+    "ps": "ps as in ma<b>ps</b>",
+    "i": "m<b>e</b>",
+    "y": "Not found in most English accents, but it's like the r<b>ue</b> in French",
+    "ɨ": "Not found in most English accents, but in Cockney it's r<b>u</b>de",
+    "ʉ": "Not found in American accents, but it's r<b>u</b>de in a posh (RP) English accent",
+    "ɯ": "",
+    "u": "b<b>oo</b>t",
+    "ɪ": "In most dialects, b<b>i</b>t",
+    "ʏ": "",
+    "ʊ": "h<b>oo</b>k",
+    "e": "In most dialects, pl<b>ay</b>",
+    "ø": "Not found in most English accents, but it's similar to the b<b>i</b>rd in a South African accent",
+    "ɘ": "",
+    "ɵ": "It's similar to the f<b>oo</b>t in a posh (RP accent)",
+    "ɤ": "",
+    "o": "Like the vowel in go, g<b>o</b>",
+    "e̞": "",
+    "ø̞": "",
+    "ə": "sof<b>a</b>",
+    "ɤ̞": "",
+    "o̞": "",
+    "ɛ": "b<b>e</b>d",
+    "œ": "It's the sound g<b>o<b>, in a South African accent",
+    "ɜ": "",
+    "ɞ": "",
+    "ʌ": "",
+    "ɔ": "th<b>ough</b>t",
+    "æ": "",
+    "ɐ": "",
+    "a": "m<b>a</b>ma",
+    "ɶ": "",
+    "a with diaresis̈": "",
+    "ɑ": "",
+    "ɒ": "",
+    "m": "<b>m</b>e",
+    "ɱ": "",
+    "n": "<b>n</b>ice",
+    "ɳ": "",
+    "ɲ": "",
+    "ŋ": "",
+    "ɴ": "",
+    "p": "s<b>p</b>ill",
+    "pʰ": "<b>p</b>ill",
+    "b": "<b>b</b>old",
+    "t": "<b>t</b>ill",
+    "d": "<b>d</b>og",
+    "ʈ": "",
+    "ɖ": "",
+    "c": "",
+    "ɟ": "",
+    "k": "<b>k</b>ill",
+    "g": "la<b>g</b>oon",
+    "q": "",
+    "ɢ": "",
+    "ʡ": "",
+    "ʔ": "",
+    "ɸ": "",
+    "β": "",
+    "f": "",
+    "v": "",
+    "θ": "",
+    "ð": "",
+    "s": "<b>S</b>aturday",
+    "z": "<b>z</b>oo",
+    "ʃ": "",
+    "ʒ": "",
+    "ʂ": "",
+    "ʐ": "",
+    "ɕ": "",
+    "ç": "",
+    "ʝ": "",
+    "x": "",
+    "ɣ": "",
+    "χ": "",
+    "ħ": "",
+    "ʜ": "",
+    "h": "",
+    "ʋ": "",
+    "ɹ": "",
+    "ɻ": "",
+    "j": "",
+    "ɰ": "",
+    "ʁ": "",
+    "ʕ": "",
+    "ʢ": "",
+    "ɦ": "",
+    "ʙ": "",
+    "r": "Not found in English, but in Spanish, pe<b>rr</b>o",
+    "ʀ": "",
+    "ⱱ": "",
+    "ɾ": "",
+    "ɽ": "",
+    "ɬ": "",
+    "ɮ": "",
+    "l": "<b>l</b>et",
+    "ɭ": "",
+    "ʎ": "",
+    "ʟ": "A rare sound, found in the word mi<b>l</b>k",
+    "ɺ": "Very, very rare. Sort of between r, and l.",
+}
 
 
 setAudio = function(char) {
-  $("#audio").attr("src", ipa[char]);
+  $("#audio").attr("src", char);
   $("#audio").get(0).play();
 }
 
@@ -110,9 +212,11 @@ getAlphabet = function (alphabet) {
     $.getJSON(("http://alphabets-of-the-world.herokuapp.com/data/" + alphabet), function (data) {
       for (var row = 0; row < data.length; row++) {
             letter = data[row]
-            $(".table").append("<tr><td class='sound' id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>" +  letter[2] +"</td></tr>");
+            console.log(letter);
+            var ishvalue = equivalents[letter[1]];
+            $(".table").append("<tr><td class='sound' id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>"+ ishvalue +"</td><td>" +  letter[2] +"</td></tr>");
             $("#" + row).on("click", function() {
-                setAudio(data[this.id][1]);
+                setAudio(ipa[(data[this.id][1])]);
             })            
         }
     })
