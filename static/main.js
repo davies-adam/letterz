@@ -107,7 +107,7 @@ setAudio = function(char) {
 }
 
 getAlphabet = function (alphabet) {
-    $.getJSON(("//data/" + alphabet), function (data) {
+    $.getJSON(("http://alphabets-of-the-world.herokuapp.com/data/" + alphabet), function (data) {
       for (var row = 0; row < data.length; row++) {
             letter = data[row]
             $(".table").append("<tr><td id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>" +  letter[2] +"</td></tr>");
