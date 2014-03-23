@@ -27,7 +27,7 @@ def data(alphabet):
         ("E ε", "e", "epsilon"),
         ("Z ζ", "z", "zeta"),
         ("H η", "ɛ", "eta"),
-        ("Θ θ", "th", "theta"),
+        ("Θ θ", "t", "theta"),
         ("Ι ι", "i", "iota"),
         ("K κ", "k", "kappa"),
         ("Λ λ", "l", "lambda"),
