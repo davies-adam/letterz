@@ -5,6 +5,8 @@ import json
 
 app = Flask(__name__)
 
+app.debug = True
+
 @app.route("/")
 def intro():
   return render_template("intro.html")

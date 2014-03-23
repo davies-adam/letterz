@@ -39,3 +39,8 @@ body, html {
   color: white;
 	height: 50%;
 }
+.about {
+  height: 50%;
+  font-weight: bold;
+  font-size: 2em;
+}
