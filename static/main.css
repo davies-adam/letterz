@@ -6,3 +6,6 @@ body {
 th {
   font-weight: bold;
 }
+.sound {
+    cursor: pointer;
+}

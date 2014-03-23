@@ -5,22 +5,22 @@ body, html {
 .greek {
 	background: #2ECC71;
 	color: white;
-	height: 100%;
+	height:50%;
 }
 
 .hebrew {
 	background: #3498db;
 	color: white;
-	height: 100%;
+	height: 50%;
 }
 
 .hindi {
   background: #f1c40f;
   color: white;
-	height: 100%;
+	height: 50%;
 }
 .cyrillic {
   background: #e74c3c;
   color: white;
-	height: 100%;
+	height: 50%;
 }

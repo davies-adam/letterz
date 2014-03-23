@@ -110,7 +110,7 @@ getAlphabet = function (alphabet) {
     $.getJSON(("http://alphabets-of-the-world.herokuapp.com/data/" + alphabet), function (data) {
       for (var row = 0; row < data.length; row++) {
             letter = data[row]
-            $(".table").append("<tr><td id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>" +  letter[2] +"</td></tr>");
+            $(".table").append("<tr><td class='sound' id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>" +  letter[2] +"</td></tr>");
             $("#" + row).on("click", function() {
                 setAudio(data[this.id][1]);
             })            
