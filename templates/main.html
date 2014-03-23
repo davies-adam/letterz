@@ -1,1 +1,26 @@
-Hello world.
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Uninvited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='{{ url_for('static', filename='main.css') }}' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <audio id="audio" src="" autoplay="true"></audio>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+  <script>
+    getAlphabet("{{alphabet}}");
+  </script>
+  <table class="table">
+    <tr>
+       <th>Letter (click for sound)</th>
+       <th>Name of letter</th>
+     </tr>
+  </table>
+</body>
+
+</html>

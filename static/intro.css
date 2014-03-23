@@ -1,0 +1,21 @@
+body, html {
+	height: 100%;
+}
+
+.greek {
+	background: #2ECC71;
+	color: white;
+	height: 100%;
+}
+
+.hebrew {
+	background: #3498db;
+	color: white;
+	height: 100%;
+}
+
+.hindi {
+  background: #f1c40f;
+  color: white;
+	height: 100%;
+}
