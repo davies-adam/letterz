@@ -28,9 +28,9 @@ def modern_hebrew():
 def russian():
   return render_template("main.html", alphabet="russian")
 
-@app.route("/icelandic")
-def icelandic():
-  return render_template("main.html", alphabet="icelandic")
+@app.route("/polish")
+def polish():
+  return render_template("main.html", alphabet="polish")
 
 @app.route("/vietnamese")
 def vietnamese():
