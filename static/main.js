@@ -145,7 +145,7 @@ equivalents = {
     "ŋ": "",
     "ɴ": "",
     "p": "s<b>p</b>ill",
-    "pʰ": "<b>p</b>ill"
+    "pʰ": "<b>p</b>ill",
     "b": "<b>b</b>old",
     "t": "<b>t</b>ill",
     "d": "<b>d</b>og",
