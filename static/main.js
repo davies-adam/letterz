@@ -112,7 +112,7 @@ equivalents = {
     "ps": "ps as in ma<b>ps</b>",
     "dʒ": "<b>j</b>ump",
     "tʃ": "<b>ch</b>at",
-    "je": "<b>ye</b>s,
+    "je": "<b>ye</b>s",
     "i": "m<b>e</b>",
     "y": "Not found in most English accents, but it's like the r<b>ue</b> in French",
     "ɨ": "Not found in most English accents, but in Cockney it's r<b>u</b>de",
@@ -221,7 +221,7 @@ setAudio = function(char) {
 }
 
 getAlphabet = function (alphabet) {
-    $.getJSON(("http://alphabets-of-the-world.herokuapp.com/data/" + alphabet), function (data) {
+    $.getJSON(("http://harlaw-96324.use1-2.nitrousbox.com:5000/data/" + alphabet), function (data) {
       for (var row = 0; row < data.length; row++) {
             letter = data[row]
             console.log(letter);

@@ -263,8 +263,8 @@ def data(alphabet):
     ]
     if alphabet == "anc-greek":
         return json.dumps(ancgreek)
-    elif alphabet == "russian:
-        return russian
+    elif alphabet == "russian":
+        return json.dumps(russian)
     elif alphabet == "turkish":
         return json.dumps(turkish)
     elif alphabet == "bib-hebrew":
