@@ -104,6 +104,8 @@ var ipa = {
 equivalents = {
     "ks": "x as in a<b>x</b>",
     "ps": "ps as in ma<b>ps</b>",
+    "dʒ": "<b>j</b>ump",
+    "tʃ": "<b>ch</b>at",
     "i": "m<b>e</b>",
     "y": "Not found in most English accents, but it's like the r<b>ue</b> in French",
     "ɨ": "Not found in most English accents, but in Cockney it's r<b>u</b>de",
@@ -193,7 +195,7 @@ equivalents = {
     "r": "Not found in English, but in Spanish, pe<b>rr</b>o",
     "ʀ": "",
     "ⱱ": "",
-    "ɾ": "",
+    "ɾ": "be<b>tt</b>er (spoken quickly)",
     "ɽ": "Not found in English",
     "ɬ": "Not found in English, but found in the Welsh of <b>Ll</b>oyd",
     "ɮ": "Very rare",
