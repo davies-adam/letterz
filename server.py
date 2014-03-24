@@ -32,9 +32,9 @@ def russian():
 def polish():
   return render_template("main.html", alphabet="polish")
 
-@app.route("/vietnamese")
-def vietnamese():
-  return render_template("main.html", alphabet="vietnamese")
+@app.route("/armenian")
+def armenian():
+  return render_template("main.html", alphabet="armenian")
 
 @app.route("/turkish")
 def turkish():
@@ -117,13 +117,13 @@ def data(alphabet):
         ("ת", "t", "tav")]
     polish = [
         ("A a", "ä", "a"),
-        #("Ą ą", "ɔ̃ ", "ą"),
+        ("Ą ą", "ɔ̃", "ą"),
         ("B b", "b", "be"),
         ("C c", "ts", "ce"),
         ("Ć ć", "tɕ", "cie"),
         ("D d", "d", "de"),
         ("E e", "ɛ", "e"),
-        #("Ę ę", "ɛ̃ ", "ę"),
+        ("Ę ę", "ɛ̃ ", "ę"),
         ("F f", "f", "ef"),
         ("G g", "ɡ", "gie"),
         ("H h", "x", "ha"),
@@ -148,6 +148,46 @@ def data(alphabet):
         ("Z z", "z", "zet"),
         ("Ź ź", "ʐ", "ziet"),
         ("Ż ż", "ʐ", "żet")
+    ]
+    armenian = [
+        ("Ա ա", "ɑ", "ayb"),
+        ("Բ բ", "b", "ben"),
+        ("Գ գ", "ɡ", "gim"),
+        ("Դ դ", "d", "da"),
+        ("Ե ե", "ɛ", "yeč"),
+        ("Զ զ", "z", "za"),
+        ("Է է", "ɛ", "ē"),
+        ("Ը ը", "ə", "ët"),
+        ("Թ թ", "t", "to"),
+        ("Ժ ժ", "ʒ", "zhe"),
+        ("Ի ի", "i", "ini"),
+        ("Լ լ", "l", "lyown"),
+        ("Խ խ", "χ", "xe"),
+        ("Ծ ծ", "ts", "ça"),
+        ("Կ կ", "k", "ken"),
+        ("Հ հ", "h", "ho"),
+        ("Ձ ձ", "z", "tsa"),
+        ("Ղ ղ", "ɫ", "gat"),
+        ("Ճ ճ ", "tʃ", "č̣e"),
+        ("Մ մ", "m", "men"),
+        ("Յ յ", "j", "yi"),
+        ("Ն ն", "n", "now"),
+        ("Շ շ", "ʃ", "ša"),
+        ("Ո ո", "o", "vo"),
+        ("Չ չ", "tʃ", "ča"),
+        ("Պ պ", "p", "pe"),
+        ("Ջ ջ", "dʒ", "je"),
+        ("Ռ ռ", "r", "ra"),
+        ("Ս ս", "s", "se"),
+        ("Վ վ", "v", "vev"),
+        ("Տ տ", "t", "tyown"),
+        ("Ր ր", "ɹ", "re"),
+        ("Ց ց", "s", "c'o"),
+        ("ՈՒ Ու", "u", "u"),
+        ("Փ փ", "p", "pywor"),
+        ("Ք ք", "k", "ke"),
+        ("Օ օ", "o", "o"),
+        ("Ֆ ֆ", "f", "fe")
     ]
     turkish = [
         ("a", "a", ""),
@@ -195,5 +235,7 @@ def data(alphabet):
         return json.dumps(mod_hebrew)
     elif alphabet == "polish":
         return json.dumps(polish)
+    elif alphabet == "armenian":
+        return json.dumps(armenian)
     else:
         return "Error"

@@ -103,7 +103,8 @@ var ipa = {
     "ʎ": "http://upload.wikimedia.org/wikipedia/commons/d/d9/Palatal_lateral_approximant.ogg",
     "ʟ": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Velar_lateral_approximant.ogg",
     "ɺ": "http://upload.wikimedia.org/wikipedia/commons/d/df/Alveolar_lateral_flap.ogg",
-    "w": "http://upload.wikimedia.org/wikipedia/commons/f/f2/Voiced_labio-velar_approximant.ogg"
+    "w": "http://upload.wikimedia.org/wikipedia/commons/f/f2/Voiced_labio-velar_approximant.ogg",
+    "ɫ": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Velarized_alveolar_lateral_approximant.ogg"
 };
 equivalents = {
     "ks": "x as in a<b>x</b>",
