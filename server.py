@@ -85,7 +85,7 @@ def data(alphabet):
         ("y", "j", ""),
         ("v", "v", ""),
         ("z", "z", ""),
-        ("z", "ð", ""),
+        ("z", "ð", "")
     ]
     if alphabet == "anc-greek":
         return json.dumps(ancgreek)
