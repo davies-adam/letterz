@@ -3,8 +3,8 @@ var ipa = {
     "ps": "https://dl.dropboxusercontent.com/s/3w1ywt5rhd8y59e/ps.ogg?token_hash=AAGQGPHwAUvhV5laBfGErNUyWmP1gZRxNqI3kjc2HiCPuw",
     "dʒ": "http://upload.wikimedia.org/wikipedia/commons/e/e6/Voiced_palato-alveolar_affricate.ogg",
     "tʃ": "http://upload.wikimedia.org/wikipedia/commons/9/97/Voiceless_palato-alveolar_affricate.ogg",
-    "t̪͡s̪": "http://upload.wikimedia.org/wikipedia/commons/b/b5/Voiceless_dental_sibilant_affricate.oga",
-    "t͡ɕ": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Voiceless_alveolo-palatal_affricate.ogg",
+    "ts": "http://upload.wikimedia.org/wikipedia/commons/b/b5/Voiceless_dental_sibilant_affricate.oga",
+    "tɕ": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Voiceless_alveolo-palatal_affricate.ogg",
     "i": "http://upload.wikimedia.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg",
     "y": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Close_front_rounded_vowel.ogg",
     "ɨ": "http://upload.wikimedia.org/wikipedia/commons/5/53/Close_central_unrounded_vowel.ogg",
@@ -102,7 +102,8 @@ var ipa = {
     "ɭ": "http://upload.wikimedia.org/wikipedia/commons/d/d1/Retroflex_lateral_approximant.ogg",
     "ʎ": "http://upload.wikimedia.org/wikipedia/commons/d/d9/Palatal_lateral_approximant.ogg",
     "ʟ": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Velar_lateral_approximant.ogg",
-    "ɺ": "http://upload.wikimedia.org/wikipedia/commons/d/df/Alveolar_lateral_flap.ogg"
+    "ɺ": "http://upload.wikimedia.org/wikipedia/commons/d/df/Alveolar_lateral_flap.ogg",
+    "w": "http://upload.wikimedia.org/wikipedia/commons/f/f2/Voiced_labio-velar_approximant.ogg"
 };
 equivalents = {
     "ks": "x as in a<b>x</b>",
@@ -207,6 +208,7 @@ equivalents = {
     "ʎ": "Not found in English, but similar to <b>ll</b>ama",
     "ʟ": "A rare sound, found in the word mi<b>l</b>k",
     "ɺ": "Very, very rare. Sort of between r, and l.",
+    "w": "<b>w</b>ater
 }
 
 
