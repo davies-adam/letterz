@@ -9,12 +9,12 @@ body, html {
 }
 
 .hebrew {
-	background: #3498db;
+	background: #c0392b;
 	color: white;
 	height: 50%;
 }
 
-.hindi {
+.modern-hebrew {
   background: #f1c40f;
   color: white;
 	height: 50%;
@@ -24,8 +24,8 @@ body, html {
   color: white;
 	height: 50%;
 }
-.hiragana {
-  background: #c0392b;
+.icelandic {
+  background: #3498db;
   color: white;
 	height: 50%;
 }

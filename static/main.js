@@ -33,7 +33,7 @@ var ipa = {
     "ɐ": "http://upload.wikimedia.org/wikipedia/commons/2/22/Near-open_central_unrounded_vowel.ogg",
     "a": "http://upload.wikimedia.org/wikipedia/commons/6/65/Open_front_unrounded_vowel.ogg",
     "ɶ": "http://upload.wikimedia.org/wikipedia/commons/c/c1/Open_front_rounded_vowel.ogg",
-    "a with diaresis̈": "",
+    "ä": "http://upload.wikimedia.org/wikipedia/commons/5/50/Open_central_unrounded_vowel.ogg",
     "ɑ": "http://upload.wikimedia.org/wikipedia/commons/e/e5/Open_back_unrounded_vowel.ogg",
     "ɒ": "http://upload.wikimedia.org/wikipedia/commons/0/0a/Open_back_rounded_vowel.ogg",
     "m": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg",
@@ -52,7 +52,7 @@ var ipa = {
     "c": "http://upload.wikimedia.org/wikipedia/commons/5/5d/Voiceless_palatal_plosive.ogg",
     "ɟ": "http://upload.wikimedia.org/wikipedia/commons/1/1d/Voiced_palatal_plosive.ogg",
     "k": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Voiceless_velar_plosive.ogg",
-    "g": "http://upload.wikimedia.org/wikipedia/commons/transcoded/5/58/Voiced_velar_stop.ogg/Voiced_velar_stop.ogg.ogg",
+    "ɡ": "http://upload.wikimedia.org/wikipedia/commons/transcoded/5/58/Voiced_velar_stop.ogg/Voiced_velar_stop.ogg.ogg",
     "q": "http://upload.wikimedia.org/wikipedia/commons/1/19/Voiceless_uvular_plosive.ogg",
     "ɢ": "http://upload.wikimedia.org/wikipedia/commons/b/b6/Voiced_uvular_stop.oga",
     "ʡ": "http://upload.wikimedia.org/wikipedia/commons/b/b2/Epiglottal_stop.ogg",
@@ -84,7 +84,7 @@ var ipa = {
     "j": "http://upload.wikimedia.org/wikipedia/commons/e/e8/Palatal_approximant.ogg",
     "ɰ": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Voiced_velar_approximant.ogg",
     "ʁ": "http://upload.wikimedia.org/wikipedia/commons/a/af/Voiced_uvular_fricative.ogg",
-    "ʕ": "",
+    "ʕ": "http://upload.wikimedia.org/wikipedia/commons/c/cd/Voiced_pharyngeal_fricative.ogg",
     "ʢ": "",
     "ɦ": "http://upload.wikimedia.org/wikipedia/commons/e/e2/Voiced_glottal_fricative.ogg",
     "ʙ": "http://upload.wikimedia.org/wikipedia/commons/e/e7/Bilabial_trill.ogg",
@@ -156,7 +156,7 @@ equivalents = {
     "c": "Not found in English, like <b>q</b>ui",
     "ɟ": "Not found in English, but similar to <b>g</b>em",
     "k": "<b>k</b>ill",
-    "g": "la<b>g</b>oon",
+    "ɡ": "la<b>g</b>oon",
     "q": "Not in most dialects, similar to <b>c></b>at",
     "ɢ": "Very, very rare.",
     "ʡ": "Very, very rare",
@@ -187,8 +187,8 @@ equivalents = {
     "ɻ": "In some dialects, <b>r</b>oar",
     "j": "<b>y</b>ou",
     "ɰ": "Not found in English, but similar to pa<b>g</b>ar",
-    "ʁ": "",
-    "ʕ": "",
+    "ʁ": "Not found in English, but it's the glutteral French r, as in <b>r</b>etourner",
+    "ʕ": "Not found in English, but like the sound between the words in uh<b>-</b>oh",
     "ʢ": "",
     "ɦ": "",
     "ʙ": "",
@@ -213,7 +213,7 @@ setAudio = function(char) {
 }
 
 getAlphabet = function (alphabet) {
-    $.getJSON(("http://alphabets-of-the-world.herokuapp.com/data/" + alphabet), function (data) {
+    $.getJSON(("http://harlaw-96324.use1-2.nitrousbox.com:5000/data/" + alphabet), function (data) {
       for (var row = 0; row < data.length; row++) {
             letter = data[row]
             console.log(letter);

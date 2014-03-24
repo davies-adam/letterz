@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 
-app.debug = True
+app.Debug = True
 
 @app.route("/")
 def intro():
@@ -15,9 +15,26 @@ def intro():
 def ancient_greek():
     return render_template("main.html", alphabet="anc-greek")
   
+
+@app.route("/biblical-hebrew")
+def biblical_hebrew():
+    return render_template("main.html", alphabet="bib-hebrew")
+  
+@app.route("/modern-hebrew")
+def modern_hebrew():
+    return render_template("main.html", alphabet="mod-hebrew")
+  
 @app.route("/russian")
 def russian():
   return render_template("main.html", alphabet="russian")
+
+@app.route("/icelandic")
+def icelandic():
+  return render_template("main.html", alphabet="icelandic")
+
+@app.route("/vietnamese")
+def vietnamese():
+  return render_template("main.html", alphabet="vietnamese")
 
 @app.route("/turkish")
 def turkish():
@@ -51,6 +68,53 @@ def data(alphabet):
         ("Ψ ψ", "ps", "psi"),
         ("Ω ω", "ɔ", "omega")
     ]
+    bib_hebrew = [
+        ("א", "ʔ", "aleph"),
+        ("ב", "b", "bet"),
+        ("ג", "ɡ", "gimel"),
+        ("ד", "d", "dalet"),
+        ("ה", "h", "he"),
+        ("ו", "w", "vav"),
+        ("ז", "z", "zayin"),
+        ("ח", "ħ", "het"),
+        ("ט", "t", "tet"),
+        ("י", "j", "yod"),
+        ("כ ך", "k", "kaf"),
+        ("ל", "l", "lamed"),
+        ("מ ם", "m", "mem"),
+        ("נ ן", "n", "nun"),
+        ("ס", "s", "semkh"),
+        ("ע", "ʕ", "ayin"),
+        ("פ ף", "p", "pe"),
+        ("צ  ץ", "s", "tsadi"),
+        ("ק", "k", "qof"),
+        ("ר", "ɾ", "resh"),
+        ("ש", "ɬ", "shin"),
+        ("ת", "t", "tav")]
+    mod_hebrew = [
+        ("א", "ʔ", "aleph"),
+        ("ב", "b", "bet"),
+        ("ג", "ɡ", "gimel"),
+        ("ד", "d", "dalet"),
+        ("ה", "h", "he"),
+        ("ו", "v", "vav"),
+        ("ז", "z", "zayin"),
+        ("ז׳", "ʒ", ""),
+        ("ח", "ħ", "het"),
+        ("ט", "t", "tet"),
+        ("י", "j", "yod"),
+        ("כ ך", "χ", "kaf"),
+        ("ל", "l", "lamed"),
+        ("מ ם", "m", "mem"),
+        ("נ ן", "n", "nun"),
+        ("ס", "s", "semkh"),
+        ("ע", "ʕ", "ayin"),
+        ("פ ף", "p", "pe"),
+        ("צ  ץ", "ts", "tsadi"),
+        ("ק", "k", "qof"),
+        ("ר", "ʁ", "resh"),
+        ("ש", "s", "shin"),
+        ("ת", "t", "tav")]
     turkish = [
         ("a", "a", ""),
         ("a", "ɑ", ""),
@@ -91,3 +155,9 @@ def data(alphabet):
         return json.dumps(ancgreek)
     elif alphabet == "turkish":
         return json.dumps(turkish)
+    elif alphabet == "bib-hebrew":
+        return json.dumps(bib_hebrew)
+    elif alphabet == "mod-hebrew":
+        return json.dumps(mod_hebrew)
+    else:
+        return "Error"
