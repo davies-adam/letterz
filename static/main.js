@@ -3,6 +3,8 @@ var ipa = {
     "ps": "https://dl.dropboxusercontent.com/s/3w1ywt5rhd8y59e/ps.ogg?token_hash=AAGQGPHwAUvhV5laBfGErNUyWmP1gZRxNqI3kjc2HiCPuw",
     "dʒ": "http://upload.wikimedia.org/wikipedia/commons/e/e6/Voiced_palato-alveolar_affricate.ogg",
     "tʃ": "http://upload.wikimedia.org/wikipedia/commons/9/97/Voiceless_palato-alveolar_affricate.ogg",
+    "t̪͡s̪": "http://upload.wikimedia.org/wikipedia/commons/b/b5/Voiceless_dental_sibilant_affricate.oga",
+    "t͡ɕ": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Voiceless_alveolo-palatal_affricate.ogg",
     "i": "http://upload.wikimedia.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg",
     "y": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Close_front_rounded_vowel.ogg",
     "ɨ": "http://upload.wikimedia.org/wikipedia/commons/5/53/Close_central_unrounded_vowel.ogg",
@@ -29,6 +31,7 @@ var ipa = {
     "ɞ": "",
     "ʌ": "http://upload.wikimedia.org/wikipedia/commons/9/92/Open-mid_back_unrounded_vowel.ogg",
     "ɔ": "http://upload.wikimedia.org/wikipedia/commons/0/02/Open-mid_back_rounded_vowel.ogg",
+    "ɔ̃ ": 
     "æ": "http://upload.wikimedia.org/wikipedia/commons/c/c9/Near-open_front_unrounded_vowel.ogg",
     "ɐ": "http://upload.wikimedia.org/wikipedia/commons/2/22/Near-open_central_unrounded_vowel.ogg",
     "a": "http://upload.wikimedia.org/wikipedia/commons/6/65/Open_front_unrounded_vowel.ogg",

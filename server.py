@@ -115,6 +115,40 @@ def data(alphabet):
         ("ר", "ʁ", "resh"),
         ("ש", "s", "shin"),
         ("ת", "t", "tav")]
+    polish = [
+        ("A a", "ä", "a"),
+        #("Ą ą", "ɔ̃ ", "ą"),
+        ("B b", "b", "be"),
+        ("C c", "t̪͡s̪", "ce"),
+        ("Ć ć", "t͡ɕ", "cie"),
+        ("D d", "d̪", "de"),
+        ("E e", "ɛ", "e"),
+        #("Ę ę", "ɛ̃ ", "ę"),
+        ("F f", "f", "ef"),
+        ("G g", "ɡ", "gie"),
+        ("H h", "x", "ha"),
+        ("I i", "i", "i"),
+        ("J j", "j", "jot"),
+        ("K k", "k", "ka"),
+        ("L l", "l", "el"),
+        ("Ł ł", "w", "eł"),
+        ("M m", "m", "em"),
+        ("N n", "n", "en"),
+        ("Ń ń", "ɲ", "eɲ"),
+        ("O o", "ɔ", "o"),
+        ("Ó ó", "u", "ó"),
+        ("P p", "p", "pe"),
+        ("R r", "r", "er"),
+        ("S s", "s", "es"),
+        ("Ś ś", "ɕ", "eś"),
+        ("T t", "t", "te"),
+        ("U u", "u", "u"),
+        ("W w", "v", "vu"),
+        ("Y y", "ɘ", "igrek"),
+        ("Z z", "z", "zet"),
+        ("Ź ź", "ʐ", "ziet"),
+        ("Ż ż", "ʐ", "żet")
+    ]
     turkish = [
         ("a", "a", ""),
         ("a", "ɑ", ""),
@@ -159,5 +193,7 @@ def data(alphabet):
         return json.dumps(bib_hebrew)
     elif alphabet == "mod-hebrew":
         return json.dumps(mod_hebrew)
+    elif alphabet == "polish":
+        return json.dumps(polish)
     else:
         return "Error"
