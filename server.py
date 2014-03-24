@@ -19,6 +19,10 @@ def ancient_greek():
 def russian():
   return render_template("main.html", alphabet="russian")
 
+@app.route("/turkish")
+def turkish():
+  return render_template("main.html", alphabet="turkish")
+
 @app.route("/data/<alphabet>")
 def data(alphabet):
     ancgreek = [
@@ -47,5 +51,43 @@ def data(alphabet):
         ("Ψ ψ", "ps", "psi"),
         ("Ω ω", "ɔ", "omega")
     ]
+    turkish = [
+        ("a", "a", ""),
+        ("a", "ɑ", ""),
+        ("b", "b", ""),
+        ("c", "dʒ", ""),
+        ("ç", "tʃ", ""),
+        ("d", "d", ""),
+        ("e", "æ", ""),
+        ("e", "e", ""),
+        ("f", "f", ""),
+        ("g", "g", ""),
+        ("g", "ɟ", ""),
+        ("ğ", "ɰ", "yumuşak ge"),
+        ("h", "h", ""),
+        ("i", "i", ""),
+        ("ı", "ɯ", ""),
+        ("j", "ʒ", "")
+        ("k", "k", ""),
+        ("l", "l", ""),
+        ("m", "m", ""),
+        ("n", "n", ""),
+        ("o", "o", ""),
+        ("ö", "ø", ""),
+        ("p", "p", ""),
+        ("r", "ɾ", ""),
+        ("s", "s", ""),
+        ("s", "θ", ""),
+        ("ş", "ʃ", ""),
+        ("t", "t", ""),
+        ("u", "u", ""),
+        ("ü", "y", ""),
+        ("y", "j", ""),
+        ("v", "v", ""),
+        ("z", "z", ""),
+        ("z", "ð", ""),
+    ]
     if alphabet == "anc-greek":
         return json.dumps(ancgreek)
+    elif alphabet == "turkish":
+        return json.dumps(turkish)
