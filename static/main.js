@@ -208,7 +208,7 @@ equivalents = {
     "ʎ": "Not found in English, but similar to <b>ll</b>ama",
     "ʟ": "A rare sound, found in the word mi<b>l</b>k",
     "ɺ": "Very, very rare. Sort of between r, and l.",
-    "w": "<b>w</b>ater
+    "w": "<b>w</b>ater"
 }
 
 
