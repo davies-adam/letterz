@@ -213,7 +213,7 @@ setAudio = function(char) {
 }
 
 getAlphabet = function (alphabet) {
-    $.getJSON(("http://harlaw-96324.use1-2.nitrousbox.com:5000/data/" + alphabet), function (data) {
+    $.getJSON(("http://http://alphabets-of-the-world.herokuapp.com/data/" + alphabet), function (data) {
       for (var row = 0; row < data.length; row++) {
             letter = data[row]
             console.log(letter);
