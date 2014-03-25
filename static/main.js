@@ -6,6 +6,9 @@ var ipa = {
     "ts": "http://upload.wikimedia.org/wikipedia/commons/b/b5/Voiceless_dental_sibilant_affricate.oga",
     "tɕ": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Voiceless_alveolo-palatal_affricate.ogg",
     "je": "https://dl.dropboxusercontent.com/s/s2kw9oy5haysnmy/je.ogg?token_hash=AAGDBfiuOmtPvp0jJL5QCo3UNPAm3ZtaT_tk2jhhHcDu3A",
+    "jo": "https://dl.dropboxusercontent.com/s/exzl0tbc4v7y7pi/jo.ogg?token_hash=AAGkXt-5BLVj-5G9gQhdS1rs9VcIkj7T4gz6CYThYsjf1A",
+    "ju": "https://dl.dropboxusercontent.com/s/5i4k5rchfmk7wa8/ju.ogg?token_hash=AAELwQJrpHtmcX77hnaSgzTYE_bNu-NKVPstBqjREqZf7g",
+    "ja": "https://dl.dropboxusercontent.com/s/7j4i1ggg3iwmky9/ya.ogg?token_hash=AAEWfK83sjvgV4Qqere6rxeyf7mC6nDwKv-dvtziVUtErw",
     "i": "http://upload.wikimedia.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg",
     "y": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Close_front_rounded_vowel.ogg",
     "ɨ": "http://upload.wikimedia.org/wikipedia/commons/5/53/Close_central_unrounded_vowel.ogg",
@@ -112,7 +115,12 @@ equivalents = {
     "ps": "ps as in ma<b>ps</b>",
     "dʒ": "<b>j</b>ump",
     "tʃ": "<b>ch</b>at",
+    "tɕ": "Bei<b>j</b>ing",
     "je": "<b>ye</b>s",
+    "ja": "<b>Yah!</b>",
+    "ts": "<b>ts</b>unami",
+    "jo": "<b>yo</b>-<b>yo</b>",
+    "ju": "<b>you</b>",
     "i": "m<b>e</b>",
     "y": "Not found in most English accents, but it's like the r<b>ue</b> in French",
     "ɨ": "Not found in most English accents, but in Cockney it's r<b>u</b>de",
@@ -143,7 +151,7 @@ equivalents = {
     "ɐ": "",
     "a": "m<b>a</b>ma",
     "ɶ": "",
-    "a with diaresis̈": "",
+    "ä": "In a English accent, p<b>a</b>th",
     "ɑ": "sp<b>a</b>",
     "ɒ": "th<b>ough</b>t",
     "m": "<b>m</b>e",
@@ -211,7 +219,8 @@ equivalents = {
     "ʎ": "Not found in English, but similar to <b>ll</b>ama",
     "ʟ": "A rare sound, found in the word mi<b>l</b>k",
     "ɺ": "Very, very rare. Sort of between r, and l.",
-    "w": "<b>w</b>ater"
+    "w": "<b>w</b>ater",
+    "ɫ": "poo<b>l</b>"
 }
 
 
