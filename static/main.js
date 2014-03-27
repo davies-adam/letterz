@@ -111,7 +111,7 @@ var ipa = {
     "ɫ": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Velarized_alveolar_lateral_approximant.ogg"
 };
 equivalents = {
-    "ks": "x as in a<b>x</b>",
+    "ks": "a<b>x</b>",
     "ps": "ps as in ma<b>ps</b>",
     "dʒ": "<b>j</b>ump",
     "tʃ": "<b>ch</b>at",
@@ -135,7 +135,7 @@ equivalents = {
     "ɘ": "Not found in American accents, but it's b<b>i</b>rd in an Australian accent",
     "ɵ": "It's similar to the f<b>oo</b>t in a posh (RP accent)",
     "ɤ": "Not found in English",
-    "o": "Like the vowel in go, g<b>o</b>",
+    "o": "g<b>o</b>",
     "e̞": "",
     "ø̞": "",
     "ə": "sof<b>a</b>",
