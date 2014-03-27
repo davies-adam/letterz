@@ -4,6 +4,10 @@ body {
   font-family: 'Free Monospaced', Junicode, Segoe UI Symbol,  Code2000, Hnias;
 }
 
+tr {
+    font-family: 'Free Monospaced', Junicode, Segoe UI Symbol,  Code2000, Hnias;
+}
+
 th {
   font-weight: bold;
 }
