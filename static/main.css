@@ -1,11 +1,7 @@
 body {
   padding: 1em;
   font-size: 2em;
-  font-family: 'Free Monospaced', Junicode, Segoe UI Symbol,  Code2000, Hnias;
-}
-
-tr {
-    font-family: 'Free Monospaced', Junicode, Segoe UI Symbol,  Code2000, Hnias;
+  font-family: 'Free Monospaced', Junicode;
 }
 
 th {
