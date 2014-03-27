@@ -28,6 +28,10 @@ def modern_hebrew():
 def russian():
   return render_template("main.html", alphabet="russian")
 
+@app.route("/elder-futhark")
+def elder_futhark():
+  return render_template("main.html", alphabet="elder-futhark")
+
 @app.route("/polish")
 def polish():
   return render_template("main.html", alphabet="polish")
@@ -115,6 +119,33 @@ def data(alphabet):
         ("ר", "ʁ", "resh"),
         ("ש", "s", "shin"),
         ("ת", "t", "tav")]
+    elder_futhark = [
+        ("ᚠ", "f", "fehu"),
+        ("ᚢ", "u", "uruz"),
+        ("ᚦ", "θ", "þurisaz"),
+        ("ᚦ", "ð", "þurisaz"),
+        ("ᚨ", "a", "ansuz"),
+        ("ᚱ", "r", "raido"),
+        ("ᚲ", "k", "kaunan"),
+        ("ᚷ", "g", "gebo"),
+        ("ᚹ", "w", "wunjo"),
+        ("ᚺ ᚻ", "h", "hagalaz"),
+        ("ᚾ", "n", "naudiz"),
+        ("ᛁ", "i", "isaz"),
+        ("ᛃ", "j", "jera"),
+        ("ᛇ", "æ", "ihwaz"),
+        ("ᛈ", "p", "perþ"),
+        ("ᛉ", "z", "algiz"),
+        ("ᛊ", "s", "sowilo"),
+        ("ᛏ", "t", "tiwaz"),
+        ("ᛒ", "b", "berkanan"),
+        ("ᛖ", "e", "ehwaz"),
+        ("ᛗ", "m", "mannaz"),
+        ("ᛚ", "l", "laguz"),
+        ("ᛜ ᛝ", "ŋ", "ingwaz"),
+        ("ᛟ", "o", "oþila"),
+        ("ᛞ", "d", "dagaz")
+    ]
     russian = [
         ("A a", "ä", "a"),
         ("Б б", "b", "b"),
@@ -271,6 +302,8 @@ def data(alphabet):
         return json.dumps(bib_hebrew)
     elif alphabet == "mod-hebrew":
         return json.dumps(mod_hebrew)
+    elif alphabet == "elder-futhark":
+        return jsond.dumps(elder_futhark)
     elif alphabet == "polish":
         return json.dumps(polish)
     elif alphabet == "armenian":

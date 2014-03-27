@@ -5,42 +5,47 @@ body, html {
 .greek {
 	background: #2ECC71;
 	color: white;
-	height:50%;
+	height:33%;
 }
 
 .hebrew {
 	background: #c0392b;
 	color: white;
-	height: 50%;
+	height: 33%;
 }
 
 .modern-hebrew {
   background: #f1c40f;
   color: white;
-	height: 50%;
+	height: 33%;
+}
+.futhark {
+  background: #16a085;
+  color: white;
+	height: 33%;
 }
 .cyrillic {
   background: #e74c3c;
   color: white;
-	height: 50%;
+	height: 33%;
 }
 .polish {
   background: #3498db;
   color: white;
-	height: 50%;
+	height: 33%;
 }
 .armenian {
   background: #2c3e50;
   color: white;
-	height: 50%;
+	height: 33%;
 }
 .turkish {
   background: #f39c12;
   color: white;
-	height: 50%;
+	height: 33%;
 }
 .about {
-  height: 50%;
+  height: 33%;
   font-weight: bold;
   font-size: 2em;
 }
