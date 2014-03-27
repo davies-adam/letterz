@@ -127,7 +127,7 @@ def data(alphabet):
         ("ᚨ", "a", "ansuz"),
         ("ᚱ", "r", "raido"),
         ("ᚲ", "k", "kaunan"),
-        ("ᚷ", "g", "gebo"),
+        ("ᚷ", "ɡ", "gebo"),
         ("ᚹ", "w", "wunjo"),
         ("ᚺ ᚻ", "h", "hagalaz"),
         ("ᚾ", "n", "naudiz"),
