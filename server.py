@@ -8,6 +8,7 @@ app = Flask(__name__)
 app.Debug = True
 
 @app.route("/")
+@app.route("/home")
 def intro():
   return render_template("intro.html")
 
@@ -15,7 +16,6 @@ def intro():
 def ancient_greek():
     return render_template("main.html", alphabet="anc-greek")
   
-
 @app.route("/biblical-hebrew")
 def biblical_hebrew():
     return render_template("main.html", alphabet="bib-hebrew")
