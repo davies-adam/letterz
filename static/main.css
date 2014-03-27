@@ -1,8 +1,9 @@
 body {
   padding: 1em;
   font-size: 2em;
-  font-family: 'Free Monospaced', Junicode;
+  font-family:  Junicode, Segoe UI Symbol, 'Free Monospaced',  Code2000, Hnias;
 }
+
 
 th {
   font-weight: bold;
