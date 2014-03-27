@@ -303,7 +303,7 @@ def data(alphabet):
     elif alphabet == "mod-hebrew":
         return json.dumps(mod_hebrew)
     elif alphabet == "elder-futhark":
-        return jsond.dumps(elder_futhark)
+        return json.dumps(elder_futhark)
     elif alphabet == "polish":
         return json.dumps(polish)
     elif alphabet == "armenian":
