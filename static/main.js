@@ -235,7 +235,7 @@ getAlphabet = function (alphabet) {
             letter = data[row]
             console.log(letter);
             var ishvalue = equivalents[letter[1]];
-            $(".table").append("<tr><td class='sound' id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>"+ ishvalue +"</td><td>" +  letter[2] +"</td></tr>");
+            $(".table").append("<tr><td class='sound' id='" + row + "'>"+  letter[0] +"</td>" + letter[0] + "</td><td>"+ ishvalue +"</td><td>" +  letter[2] +"</td> + <td>" + letter[1] +"</td></tr>");
             $("#" + row).on("click", function() {
                 setAudio(ipa[(data[this.id][1])]);
             })            
