@@ -1,4 +1,4 @@
-body, html {
+body, div, p, html {
 	height: 100%;
   font-family: "Gentium Basic",  Segoe UI Symbol, Junicode, 'Free Monospaced',  Code2000, Hnias;
 }
