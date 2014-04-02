@@ -1,10 +1,6 @@
 body, html {
 	height: 100%;
-  font-family:  Segoe UI Symbol, Junicode, 'Free Monospaced',  Code2000, Hnias;
-}
-
-h1 {
-    font-family:  Segoe UI Symbol, Junicode, 'Free Monospaced',  Code2000, Hnias;
+  font-family: "Gentium Basic",  Segoe UI Symbol, Junicode, 'Free Monospaced',  Code2000, Hnias;
 }
 
 .greek {
