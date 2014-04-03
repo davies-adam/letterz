@@ -230,7 +230,7 @@ setAudio = function(char) {
 }
 
 getAlphabet = function (alphabet) {
-    $.getJSON(("http://alphabets-of-the-world.herokuapp.com/data/" + alphabet), function (data) {
+    $.getJSON(("http://www.letterz.info/data/" + alphabet), function (data) {
       for (var row = 0; row < data.length; row++) {
             letter = data[row]
             console.log(letter);
